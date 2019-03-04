@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #include <stdint.h>
-void rf256_hash(const void *input, void *output, int length);
+void rainforest_hash(const void *input, void *output, int length);
 
 #ifdef __cplusplus
 }

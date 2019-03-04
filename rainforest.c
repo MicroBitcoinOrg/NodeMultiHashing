@@ -32,6 +32,7 @@
 
 // Rijndael's substitution box for sub_bytes step
 
+#include "rainforest.h"
 #include <stdint.h>
 #include <string.h>
 #include <stdio.h>
@@ -806,7 +807,7 @@ static void rf256_final(void *out, rf256_ctx_t *ctx) {
 }
 
 // Hash _len_ bytes from _in_ into _out_
-void rf256_hash(const void *input, void *output, int length) {
+void rainforest_hash(const void *input, void *output, int length) {
 	rf256_ctx_t ctx;
 	rf256_init(&ctx);
 	rf256_update(&ctx, input, length);

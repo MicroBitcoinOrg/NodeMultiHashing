@@ -36,6 +36,7 @@ Algorithms
 * boolberry
 * sha256d
 * lbry
+* rainforest
 
 Usage
 -----

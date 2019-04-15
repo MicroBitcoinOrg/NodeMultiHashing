@@ -16,7 +16,7 @@ extern "C" {
     #include "keccak.h"
     #include "lbry.h"
     #include "rainforest.h"
-    #include "rfv2_core.h"
+    #include "rfv2/rfv2.h"
     #include "nist5.h"
     #include "quark.h"
     #include "qubit.h"

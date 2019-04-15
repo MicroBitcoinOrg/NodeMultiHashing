@@ -29,7 +29,7 @@
                 "x11.c",
                 "x13.c",
                 "x15.c",
-                "rfv2/rfv2_core.c",
+                "rfv2_core.c",
                 "sha3/sph_hefty1.c",
                 "sha3/sph_fugue.c",
                 "sha3/aes_helper.c",

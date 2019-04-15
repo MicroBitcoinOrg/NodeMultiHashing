@@ -16,6 +16,7 @@ extern "C" {
     #include "keccak.h"
     #include "lbry.h"
     #include "rainforest.h"
+    #include "rfv2/rfv2_core.h"
     #include "nist5.h"
     #include "quark.h"
     #include "qubit.h"
@@ -117,6 +118,7 @@ using namespace v8;
  DECLARE_CALLBACK(keccak, keccak_hash, 32);
  DECLARE_CALLBACK(lbry, lbry_hash, 32);
  DECLARE_CALLBACK(rainforest, rainforest_hash, 32);
+ DECLARE_CALLBACK(rainforest_v2, rainforest_v2_hash, 32);
  DECLARE_CALLBACK(nist5, nist5_hash, 32);
  DECLARE_CALLBACK(quark, quark_hash, 32);
  DECLARE_CALLBACK(qubit, qubit_hash, 32);
@@ -365,6 +367,7 @@ DECLARE_INIT(init) {
     NODE_SET_METHOD(exports, "keccak", keccak);
     NODE_SET_METHOD(exports, "lbry", lbry);
     NODE_SET_METHOD(exports, "rainforest", rainforest);
+    NODE_SET_METHOD(exports, "rainforest_v2", rainforest_v2);
     NODE_SET_METHOD(exports, "nist5", nist5);
     NODE_SET_METHOD(exports, "quark", quark);
     NODE_SET_METHOD(exports, "qubit", qubit);

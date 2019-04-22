@@ -118,7 +118,7 @@ using namespace v8;
  DECLARE_CALLBACK(keccak, keccak_hash, 32);
  DECLARE_CALLBACK(lbry, lbry_hash, 32);
  DECLARE_CALLBACK(rainforest, rainforest_hash, 32);
- DECLARE_CALLBACK(rfv2, rainforest_v2_hash, 32);
+ DECLARE_CALLBACK(rfv2, rfv2_hash_simple, 32);
  DECLARE_CALLBACK(nist5, nist5_hash, 32);
  DECLARE_CALLBACK(quark, quark_hash, 32);
  DECLARE_CALLBACK(qubit, qubit_hash, 32);

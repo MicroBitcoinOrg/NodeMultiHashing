@@ -793,3 +793,7 @@ int rfv2_hash(void *out, const void *in, size_t len, void *rambox, const void *r
 {
 	return rfv2_hash2(out, in, len, rambox, rambox_template, RFV2_INIT_CRC);
 }
+
+void rfv2_hash_simple(const void *input, void *output, int length) {
+	rfv2_hash(output, input, length, NULL, NULL);
+}

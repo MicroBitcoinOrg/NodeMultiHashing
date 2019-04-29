@@ -49,8 +49,6 @@
 int rfv2_hash(void *out, const void *in, size_t len, void *rambox, const void *rambox_template);
 int rfv2_hash2(void *out, const void *in, size_t len, void *rambox, const void *rambox_template, uint32_t seed);
 void rfv2_raminit(void *area);
-void rfv2_hash_simple(const void *input, void *output, int length) {
-	rfv2_hash(output, input, length, NULL, NULL);
-}
+void rfv2_hash_simple(const void *input, void *output, int length);
 
 #endif
